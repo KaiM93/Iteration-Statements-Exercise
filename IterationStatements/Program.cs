@@ -83,9 +83,21 @@
             }
             else
             {
-                Console.WriteLine($"Cannot vote, can vote by {18 - age} years");
+                Console.WriteLine($"You cannot vote, but you can vote by {18 - age} years");
                 return false;
             }
+        }
+
+        //Write a method to check if an integer (from the user)
+        //is in range -10 to 10.
+        public static bool InTenScope(int num)
+        {
+            if (num <= 10 && num >= -10)
+            {
+                return true;
+            }
+
+            return false;
         }
 
     }
